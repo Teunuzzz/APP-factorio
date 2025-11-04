@@ -12,12 +12,18 @@ struct HomeView: View {
                     NavigationLink("Recepten", destination: RecipeListView())
                     NavigationLink("Technologie", destination: TechListView())
                     NavigationLink("Planeten (Space Age)", destination: PlanetListView())
+                    NavigationLink("Cheatsheets (auto)", destination: CheatsheetsView_Dynamic())
+                    NavigationLink("Factory Planner", destination: FactoryPlannerView())
+                    NavigationLink("Vergelijking", destination: CompareWithCheatsView())
+                    
                 }
                 Section("Handig") {
                     NavigationLink("Cheatsheets", destination: CheatsheetsView())
                     NavigationLink("Ratio Calculator", destination: RatioCalculatorView())
                     NavigationLink("Main Bus Planner", destination: BusPlannerView())
+                    NavigationLink("Import JSON", destination: ImportView())
                 }
+
             }
             .navigationTitle("Factorio Companion")
         }
