@@ -1,0 +1,15 @@
+// Calculator helper (plaats onder Utils of in eigen bestand)
+import Foundation
+
+enum Calculator {
+    static func machinesNeeded(outputPerMin: Double, outPerCraft: Double, time: Double, machineSpeed: Double) -> Double {
+        guard outPerCraft > 0, time > 0, machineSpeed > 0 else { return 0 }
+        let craftsPerMinNeeded = outputPerMin / outPerCraft
+        let craftsPerMinPerMachine = (60.0 / time) * machineSpeed
+        return (craftsPerMinNeeded / craftsPerMinPerMachine)
+    }
+    static func machinesNeeded(for recipe: Recipe, targetPerMin: Double, machineSpeed: Double = 1.0) -> Double {
+        let out = recipe.outputs.first?.amount ?? 1
+        return machinesNeeded(outputPerMin: targetPerMin, outPerCraft: out, time: recipe.time, machineSpeed: machineSpeed)
+    }
+}
