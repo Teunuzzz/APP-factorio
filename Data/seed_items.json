@@ -1,0 +1,8 @@
+[
+  { "id": "iron-ore", "name": "Iron Ore", "type": "raw", "description": "Ruwe grondstof.", "icon": null },
+  { "id": "iron-plate", "name": "Iron Plate", "type": "intermediate", "description": "Basisplaat uit ijzererts.", "icon": null },
+  { "id": "copper-plate", "name": "Copper Plate", "type": "intermediate", "description": "Koperplaat.", "icon": null },
+  { "id": "green-circuit", "name": "Electronic Circuit", "type": "intermediate", "description": "‘Green circuit’.", "icon": null },
+  { "id": "space-science-pack", "name": "Space Science Pack", "type": "science", "description": "Science pack voor ruimte tech.", "icon": null },
+  { "id": "fulgora-crystal", "name": "Fulgora Crystal", "type": "space", "description": "Uniek mineraal van Fulgora.", "icon": null }
+]
