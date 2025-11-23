@@ -1,9 +1,9 @@
 {
-  "name": "Factorio Companion",
-  "short_name": "Companion",
+  "name": "Factorio Companion Planner",
+  "short_name": "FactorioPlanner",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#0a1324",
-  "theme_color": "#0a1324",
+  "background_color": "#ffffff",
+  "theme_color": "#222222",
   "icons": []
 }
