@@ -1,0 +1,9 @@
+{
+  "name": "Factorio Companion",
+  "short_name": "Companion",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0a1324",
+  "theme_color": "#0a1324",
+  "icons": []
+}
