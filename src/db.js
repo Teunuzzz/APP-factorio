@@ -12,17 +12,15 @@ export async function saveBundle(file){
 export async function loadData(){
   const text = localStorage.getItem('companion_bundle');
   if(!text){
-    return {items:[],recipes:[],techs:[],planets:[]};
+    return {items:[],recipes:[],techs:[],planets:[], plan:[]};
   }
-  try{
-    const obj = JSON.parse(text);
-    return {
-      items: obj.items || [],
-      recipes: obj.recipes || [],
-      techs: obj.techs || [],
-      planets: obj.planets || []
-    };
-  }catch{
-    return {items:[],recipes:[],techs:[],planets:[]};
-  }
+  const obj = JSON.parse(text);
+  return {
+    items: obj.items || [],
+    recipes: obj.recipes || [],
+    techs: obj.techs || [],
+    planets: obj.planets || [],
+    plan: obj.plan || []        // ⬅️ hier komt het plan uit de dump
+  };
 }
+
